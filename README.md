@@ -1,7 +1,6 @@
 #iCalendar_PHP
 
 
-.ics[iCalendar] file INSERT / UPDATE / DELETE using PHP
 
 ##Introduction
 
@@ -10,6 +9,8 @@ You can INSERT / UPDATE / DELETE iCalendar files client-side.
 
 I couldn't find any libraries about .ics file handlers written in PHP, so naturally I built my own.
 Note that in general iCal_controller gives no guarantees if you didn't add any functions to handle it.
+
+
 
 ##Example [js]
 
@@ -28,10 +29,13 @@ $.post("ical_controller.php", {controlType: 'UPDATE', startDate: ical_startDate,
 $.post("ical_controller.php", {controlType: 'DELETE', icalCreated: created}
 ```
 
+
 ##Dependencies
 
 The Controller uses one PHP Library called 'Bennu' and sample js file uses jQuery.
 * [bennu_rfc2445](http://bennu.sourceforge.net/)
+
+
 
 ##References
 
